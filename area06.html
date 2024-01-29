@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskira || Area 01</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="areas.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <style>
+        .area01_banner{
+         background-image: url("area06.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            
+            <li><a href="index.html" class="span">Taskira </a></li>
+            <span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="area01.html">Area 01</a></li>
+                <li><a href="area02.html">Area 02</a></li>
+                <li><a href="area03.html">Area 03</a></li>
+                <li><a href="area04.html">Area 04</a></li>
+                <li><a href="area05.html">Area 05</a></li>
+                <li><a href="area06.html">Area 06</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+        </span>
+        </ul>
+    </div>
+
+    
+    <div class="area01_banner">
+        <h2>Taskira peacemeal </h2>
+        <h2 class="color">Area 6</h2>
+    </div>
+
+    
+    <div class="container">
+        <div class="first">
+            <h2 id="h2">taskira area 6 daily transaction</h2>
+            <hr>
+            <p class="email">hauwasmuhd767@gmail.com</p>
+            <a href="www.gmail.com">switch accounts</a>
+            <p id="required">* Required </p>
+        </div>
+
+        <form name="myForm"  action="area6submit.html"  onsubmit="return Validate_Form()" method="post">
+        <div class="second">
+            <p>Serial Number <span>*</span></p>
+
+            <select name="choose">
+                <option  id="" value="Choose" selected>Choose</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+
+        <div class="third">
+            <p>Date <span>*</span></p>
+            <input type="date" name="date" id="data2">
+        </div>
+        
+        <div class="fourth">
+            <p>Amount <span>*</span></p>
+            <input type="tel" name="amount" id="" placeholder="Your Answer">
+        </div>
+
+        <div class="fifth">
+            <p>Deposit Number <span>*</span></p>
+            <input type="tel" name="deposit" id="" placeholder="Your Answer">
+        </div>
+
+        <div class="six">
+            <p class="type">Type <span>*</span></p>
+            <p> <input type="radio" name="radio" id=""> Deposit</p>
+            <p><input type="radio" name="radio" id=""> Loan</p>
+            <p><input type="radio" name="radio" id=""> Withdrawal</p>
+        </div>
+
+        <div id="form">
+            <input type="submit" value="submit" id="Submit">
+            <input type="reset" value="Clear Form" id="reset">
+        </div>
+   
+    </div>
+</form>
+    <div class="footer">
+        <ul>
+            <li id="copy">CopyRight 2023. All Rights Reserved .</li>
+            <span class="footer-link">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </span>
+        </ul>
+    </div>
+
+<script src="validation.js"></script>
+
+</body>
+</html>

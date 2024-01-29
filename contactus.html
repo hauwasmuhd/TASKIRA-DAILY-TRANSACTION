@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskira || Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="logo.jpg">
+</head>
+<body>
+    <div class="header">
+        <ul>
+            
+            <li><a href="index.html" class="span">Taskira </a></li>
+            <span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="area01.html">Area 01</a></li>
+            <li><a href="area02.html">Area 02</a></li>
+            <li><a href="area03.html">Area 03</a></li>
+            <li><a href="area04.html">Area 04</a></li>
+            <li><a href="area05.html">Area 05</a></li>
+            <li><a href="area06.html">Area 06</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+        </span>
+        </ul>
+    </div>
+    <div class="banner">
+
+    </div>
+
+    <h1 style="margin-top: 50px; margin-bottom: 50px; text-align: center;">Contact Us</h1>
+
+    <div class="container">
+      <form name="myform" action="" method="" onsubmit="return validate_form()">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="Choose" selected>Choose</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="nigeria">Nigeria</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <ul>
+            <li id="copy">CopyRight 2023. All Rights Reserved .</li>
+            <span class="footer-link">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </span>
+        </ul>
+    </div>
+
+<script>
+    function validate_form(){
+        let fname = document.forms["myform"]["firstname"].value;
+        let lname = document.forms["myform"]["lastname"].value;
+        let country = document.forms["myform"]["country"].value;
+
+
+        if(fname == ""){
+            alert("Please Enter Your First Name");
+            return false;
+        }else
+        if(lname == ""){
+            alert("Please Enter Your Last Name");
+            return false;
+        }else
+        if(country == "Choose"){
+            alert("Please Choose Your Country");
+            return false;
+        }
+    }
+</script>
+
+</body>
+</html>
